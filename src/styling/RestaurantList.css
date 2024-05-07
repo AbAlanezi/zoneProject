@@ -1,0 +1,74 @@
+/* RestaurantList.css */
+
+.restaurant-list {
+    padding: 60px;
+    max-width: 1200px; /* Set a maximum width for the content */
+    margin: 0 auto;
+}
+.about-us {
+    padding: 20px;
+    max-width: 1200px; /* Set a maximum width for the content */
+    margin: 0 auto;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.restaurant-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-details {
+    padding: 20px;
+}
+
+.card-title {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between; /* Align items evenly */
+}
+
+.card-rating {
+    margin-bottom: 10px;
+}
+
+.card-location {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+}
+
+.star {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    margin-right: 5px;
+    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23ccc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 L15.09 8.26 L22 9.27 L17 14.14 L18.18 21.02 L12 17.77 L5.82 21.02 L7 14.14 L2 9.27 L8.91 8.26 Z" /></svg>');
+    mask-repeat: no-repeat;
+    mask-size: contain;
+}
+
+.star.filled {
+    background-color: #ffcc00; /* Filled star color */
+}
